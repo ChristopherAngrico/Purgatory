@@ -40,7 +40,7 @@ namespace Player
             }
         }
         //TODO: attack animation
-
+       
         private void Attack()
         {
             if (throwKnife.triggerAttack)
@@ -59,10 +59,8 @@ namespace Player
                 PlayerInput.getPlayerInput.inputSystem.Player.Movement.Enable();
             }
         }
-
-        public void Die()
-        {
-            anim.SetTrigger("Die");
+        public void ThrowKnife(){
+            throwKnife.throwKnife = true;
         }
     }
 }
