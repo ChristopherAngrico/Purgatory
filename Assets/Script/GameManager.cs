@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,7 +40,7 @@ public class GameManager : MonoBehaviour
         FunctionTimer.Create(StopSpawning, 124);
         //In third until fith Deploy the last boss and then the game is end
         FunctionTimer.Create(SpawnSecondBoss, 210);
-
+        FunctionTimer.Create(StopSpawning, 211);
     }
 
     public void Die()
@@ -63,12 +64,13 @@ public class GameManager : MonoBehaviour
     }
     private void SpamMinion()
     {
+        print("Spawn");
         Delay(0.5f);
         g_assignEnemy = g_minion;
     }
     private void SpawnMinionInNormalTime()
     {
-        Delay(1f);
+        Delay(2f);
         Minion();
     }
     private void StopSpawning()

@@ -12,12 +12,11 @@ public class BuyButton : MonoBehaviour
     public void Buy()
     {
 
-        if (!g_firstStage.activeSelf && !g_secondStage.activeSelf && !g_thirdStage.activeSelf)
+        if (GameManager.instance.playerPoint >= 10 && !g_firstStage.activeSelf && !g_secondStage.activeSelf && !g_thirdStage.activeSelf)
         {
             g_firstStage.SetActive(true);
-            playerHurt.shieldSystem.currentHealth += 66;
+            GameManager.instance.playerPoint -= 10;
+            playerHurt.shieldSystem.SetCurrentHealth(34);
         }
-
-
     }
 }

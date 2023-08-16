@@ -70,19 +70,11 @@ public class DetectPlayer : MonoBehaviour
         {
             if (!idleState)
             {
-                // GetComponent<CapsuleCollider2D>().enabled = false;
                 triggerAttack = true;
             }
         }
     }
-    private IEnumerator ColliderIsDisable()
-    {
-        yield return new WaitForSeconds(0.1f);
-        if (GetComponent<CapsuleCollider2D>().isTrigger == false)
-        {
-            GetComponent<CapsuleCollider2D>().isTrigger = true;
-        }
-    }
+    
     private void DamagePlayer()
     {
         GetComponentInChildren<HitPlayer>().enabled = true;

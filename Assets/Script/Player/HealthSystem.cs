@@ -1,22 +1,23 @@
 
 public class HealthSystem
 {
-    public float currentHealth;
+    float currentHealth;
     float maxHealth;
-    public HealthSystem(int maxHealth)
+    public HealthSystem(int maxHealth,bool isShield)
     {
         this.maxHealth = maxHealth;
-        currentHealth = maxHealth;
-    }
-    private void Heal(int healAmount){
-        currentHealth += healAmount;
-        if(currentHealth >= 100){
-            currentHealth = 100;
-        }
+        currentHealth = isShield ? 0 : maxHealth;
     }
     public float GetHealth()
     {
-        return currentHealth / maxHealth;
+        if(currentHealth <= 100)
+        {
+            return currentHealth / maxHealth;
+        }
+        else
+        {
+            return 1;
+        }
     }
 
     public void Damage(int damageReceive)
@@ -28,7 +29,20 @@ public class HealthSystem
         }
     }
 
-    public int GetPointFromEnemyHit(int point){
+    public int GetPointFromEnemyHit(int point)
+    {
         return point;
+    }
+
+    public void SetCurrentHealth(int addHealth)
+    {
+        if (currentHealth < maxHealth)
+        {
+            currentHealth += addHealth;
+        }
+        else
+        {
+            currentHealth = maxHealth;
+        }
     }
 }

@@ -13,24 +13,46 @@ public class PlayerHurt : MonoBehaviour
     [SerializeField] GameObject g_health;
     [SerializeField] GameObject g_shield;
     [HideInInspector] public bool isDying;
+    float lastValueShield = 0;
     private void Start()
     {
-        healthSystem = new HealthSystem(100);
-        shieldSystem = new HealthSystem(GameManager.instance.assignValueToShield);
+        int healthMax = 100;
+        healthSystem = new HealthSystem(healthMax, false);
+        shieldSystem = new HealthSystem(healthMax, true);
     }
     void FixedUpdate()
     {
-        g_minions = GameObject.FindGameObjectsWithTag("Minion");
-        GettingHitByEnemy(g_minions, 14);
-
-        g_bosses1 = GameObject.FindGameObjectsWithTag("Boss1");
-        GettingHitByEnemy(g_bosses1, 40);
-
-        g_bosses2 = GameObject.FindGameObjectsWithTag("Boss2");
-        GettingHitByEnemy(g_bosses2, 40);
+        DamageReceivedByEnemy();
         //Player Die
         Die();
     }
+    private void Update()
+    {
+        //Update the shield every shield that has been added
+        if (shieldSystem.GetHealth() > lastValueShield)
+        {
+            //print("Update");
+            g_shield.transform.localScale = GetHealtBar(shieldSystem);
+            lastValueShield = shieldSystem.GetHealth();
+        }
+
+    }
+    private void DamageReceivedByEnemy()
+    {
+        int damageReceiveByMinion = 14;
+        int damageReceiveByBoss1 = 40;
+        int damageReceiveByBoss2 = 40;
+
+        g_minions = GameObject.FindGameObjectsWithTag("Minion");
+        GettingHitByEnemy(g_minions, damageReceiveByMinion);
+
+        g_bosses1 = GameObject.FindGameObjectsWithTag("Boss1");
+        GettingHitByEnemy(g_bosses1, damageReceiveByBoss1);
+
+        g_bosses2 = GameObject.FindGameObjectsWithTag("Boss2");
+        GettingHitByEnemy(g_bosses2, damageReceiveByBoss2);
+    }
+
     private void GettingHitByEnemy(GameObject[] g_Enemies, int damage)
     {
         foreach (GameObject g_Enemy in g_Enemies)
@@ -40,11 +62,16 @@ public class PlayerHurt : MonoBehaviour
                 if (g_Enemy.GetComponentInChildren<HitPlayer>().damagePlayer)
                 {
                     int enemyDamage = damage;
-                    DecreaseHealth(enemyDamage);
-                    if (shieldSystem.currentHealth <= 0)
-                        g_health.transform.localScale = GetHealtBar();
+                    if (shieldSystem.GetHealth() <= 0)
+                    {
+                        DecreaseHealth(healthSystem, enemyDamage);
+                        g_health.transform.localScale = GetHealtBar(healthSystem);
+                    }
                     else
-                        g_shield.transform.localScale = GetHealtBar();
+                    {
+                        DecreaseHealth(shieldSystem, enemyDamage);
+                        g_shield.transform.localScale = GetHealtBar(shieldSystem);
+                    }
                     g_Enemy.GetComponentInChildren<HitPlayer>().damagePlayer = false;
                     //Player will received point when getting hit by enemy
                     GameManager.instance.playerPoint += healthSystem.GetPointFromEnemyHit(enemyDamage);
@@ -52,20 +79,19 @@ public class PlayerHurt : MonoBehaviour
             }
         }
     }
-    private void DecreaseHealth(int enemyDamage)
+    private void DecreaseHealth(HealthSystem healthSystem, int enemyDamage)
     {
         healthSystem.Damage(enemyDamage);
     }
 
     private void Die()
     {
-        if (healthSystem.currentHealth == 0)
+        if (healthSystem.GetHealth() == 0)
         {
             isDying = true;
-            // GameManager.instance.FreezeTime();
         }
     }
-    private Vector2 GetHealtBar()
+    private Vector2 GetHealtBar(HealthSystem healthSystem)
     {
         Vector2 healthBar = new Vector2(healthSystem.GetHealth(), 1);
         return healthBar;

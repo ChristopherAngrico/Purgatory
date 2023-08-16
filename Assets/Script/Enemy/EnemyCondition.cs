@@ -6,16 +6,20 @@ public class EnemyCondition : MonoBehaviour
 {
     HealthSystem healthSystem;
     [HideInInspector] public bool isDying;
-    [SerializeField] float adjustAnimatedTime;
     DetectPlayer detectPlayer;
     private void Awake()
     {
+        //Assign enemy health
+        int minionHealth = 20;
+        int boss1Health  = 100;
+        int boss2Health = 100;
+
         if (gameObject.CompareTag("Minion"))
-            healthSystem = new HealthSystem(20);
+            healthSystem = new HealthSystem(minionHealth, false);
         if (gameObject.CompareTag("Boss1"))
-            healthSystem = new HealthSystem(100);
+            healthSystem = new HealthSystem(boss1Health, false);
         if (gameObject.CompareTag("Boss2"))
-            healthSystem = new HealthSystem(100);
+            healthSystem = new HealthSystem(boss2Health, false);
     }
     private void Start()
     {
@@ -30,8 +34,7 @@ public class EnemyCondition : MonoBehaviour
 
     private void FixedUpdate()
     {
-        print(healthSystem.currentHealth);
-        if (healthSystem.currentHealth == 0)
+        if (healthSystem.GetHealth() == 0)
         {
             detectPlayer.enabled = false;
             StartCoroutine(Animated());
