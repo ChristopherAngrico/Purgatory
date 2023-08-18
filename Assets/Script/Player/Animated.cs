@@ -59,12 +59,8 @@ namespace Player
                 PlayerInput.getPlayerInput.inputSystem.Player.Movement.Enable();
             }
         }
-        //Being call in the attack animation
         public void ThrowKnife(){
             throwKnife.throwKnife = true;
-        }
-        public void Die(){
-            anim.SetTrigger("Die");
         }
     }
 }

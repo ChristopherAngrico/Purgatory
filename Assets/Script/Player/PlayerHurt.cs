@@ -1,4 +1,5 @@
-using Player;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerHurt : MonoBehaviour
@@ -73,10 +74,7 @@ public class PlayerHurt : MonoBehaviour
                     }
                     g_Enemy.GetComponentInChildren<HitPlayer>().damagePlayer = false;
                     //Player will received point when getting hit by enemy
-                    if (healthSystem.GetHealth() != 0)
-                    {
-                        GameManager.instance.playerPoint += healthSystem.GetPointFromEnemyHit(enemyDamage);
-                    }
+                    GameManager.instance.playerPoint += healthSystem.GetPointFromEnemyHit(enemyDamage);
                 }
             }
         }
@@ -90,8 +88,7 @@ public class PlayerHurt : MonoBehaviour
     {
         if (healthSystem.GetHealth() == 0)
         {
-             GetComponent<Animated>().Die();
-            GameManager.instance.Die();
+            isDying = true;
         }
     }
     private Vector2 GetHealtBar(HealthSystem healthSystem)
