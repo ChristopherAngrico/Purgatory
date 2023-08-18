@@ -8,7 +8,8 @@ public class Upgrade : MonoBehaviour
     [SerializeField] private GameObject g_secondStage;
     [SerializeField] private GameObject g_thirdStage;
     [SerializeField] private PlayerHurt playerHurt;
-
+    private int upgradeKnifeDamage = 10;
+    private int upgradeShield = 34;
     public void Upgrade_Blade()
     {
 
@@ -18,7 +19,7 @@ public class Upgrade : MonoBehaviour
             GameManager.instance.playerPoint -= 15;
             g_firstStage.SetActive(false);
             g_secondStage.SetActive(true);
-            GameManager.instance.upgradeKnifeDamage += 10;
+            GameManager.instance.upgradeKnifeDamage += upgradeKnifeDamage;
         }
         // ThirdStage
         else if (GameManager.instance.playerPoint >= 30 && g_secondStage.activeSelf)
@@ -26,7 +27,7 @@ public class Upgrade : MonoBehaviour
             GameManager.instance.playerPoint -= 30;
             g_secondStage.SetActive(false);
             g_thirdStage.SetActive(true);
-            GameManager.instance.upgradeKnifeDamage += 10;
+            GameManager.instance.upgradeKnifeDamage += upgradeKnifeDamage;
         }
     }
     public void Upgrade_Shield()
@@ -38,7 +39,7 @@ public class Upgrade : MonoBehaviour
             GameManager.instance.playerPoint -= 10;
             g_firstStage.SetActive(false);
             g_secondStage.SetActive(true);
-            playerHurt.shieldSystem.SetCurrentHealth(34);
+            playerHurt.shieldSystem.SetCurrentHealth(upgradeShield);
         }
         // ThirdStage
         else if (GameManager.instance.playerPoint >= 10 && g_secondStage.activeSelf)
@@ -46,7 +47,7 @@ public class Upgrade : MonoBehaviour
             GameManager.instance.playerPoint -= 10;
             g_secondStage.SetActive(false);
             g_thirdStage.SetActive(true);
-            playerHurt.shieldSystem.SetCurrentHealth(34);
+            playerHurt.shieldSystem.SetCurrentHealth(upgradeShield);
         }
     }
 }

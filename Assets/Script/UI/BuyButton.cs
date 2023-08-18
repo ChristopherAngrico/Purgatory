@@ -17,6 +17,7 @@ public class BuyButton : MonoBehaviour
             g_firstStage.SetActive(true);
             GameManager.instance.playerPoint -= 10;
             playerHurt.shieldSystem.SetCurrentHealth(34);
+            print(playerHurt.shieldSystem.GetHealth());
         }
     }
 }

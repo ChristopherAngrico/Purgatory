@@ -3,13 +3,12 @@ using UnityEngine;
 public class FollowTarget : MonoBehaviour
 {
     Camera _camera;
-    GameObject g_target;
+    [SerializeField]GameObject g_target;
     Vector3 followTarget;
     [SerializeField] private Vector3 adjustPosition;
     private void Awake()
     {
         _camera = GetComponent<Camera>();
-        g_target = GameObject.FindWithTag("Player");
     }
     private void Update()
     {

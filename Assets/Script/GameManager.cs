@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] SpawnEnemy script_spawnEnemy;
     [HideInInspector] public int playerPoint = 0;
     [HideInInspector] public int upgradeKnifeDamage = 0;
-    [HideInInspector] public int assignValueToShield = 0;
     private void Awake()
     {
         if (instance != null)

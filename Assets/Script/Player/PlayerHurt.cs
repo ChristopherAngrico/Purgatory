@@ -11,9 +11,9 @@ public class PlayerHurt : MonoBehaviour
     public HealthSystem shieldSystem;
     [SerializeField] GameObject g_health;
     [SerializeField] GameObject g_shield;
+    [SerializeField] GameObject g_phase1, g_phase2, g_phase3;
     [HideInInspector] public bool isDying;
     float lastValueShield = 0;
-    [SerializeField] GameObject g_phase1, g_phase2, g_phase3;
     private void Start()
     {
         int healthMax = 100;
@@ -33,18 +33,18 @@ public class PlayerHurt : MonoBehaviour
     }
     private void DamageReceivedByEnemy()
     {
-        int damageReceiveByMinion = 14;
-        int damageReceiveByBoss1 = 40;
-        int damageReceiveByBoss2 = 40;
+        int damageReceivedByMinion = 14;
+        int damageReceivedByBoss1 = 40;
+        int damageReceivedByBoss2 = 40;
 
         g_minions = GameObject.FindGameObjectsWithTag("Minion");
-        GettingHitByEnemy(g_minions, damageReceiveByMinion);
+        GettingHitByEnemy(g_minions, damageReceivedByMinion);
 
         g_bosses1 = GameObject.FindGameObjectsWithTag("Boss1");
-        GettingHitByEnemy(g_bosses1, damageReceiveByBoss1);
+        GettingHitByEnemy(g_bosses1, damageReceivedByBoss1);
 
         g_bosses2 = GameObject.FindGameObjectsWithTag("Boss2");
-        GettingHitByEnemy(g_bosses2, damageReceiveByBoss2);
+        GettingHitByEnemy(g_bosses2, damageReceivedByBoss2);
     }
 
     private void GettingHitByEnemy(GameObject[] g_Enemies, int damage)
@@ -80,21 +80,8 @@ public class PlayerHurt : MonoBehaviour
         healthSystem.Damage(enemyDamage);
         print(shieldSystem.GetHealth());
     }
-
-    private void Die()
+    private void ShieldAdded()
     {
-        if (healthSystem.GetHealth() == 0)
-        {
-            GetComponent<Animated>().Die();
-            GameManager.instance.Die();
-        }
-    }
-    private Vector2 GetHealtBar(HealthSystem healthSystem)
-    {
-        Vector2 healthBar = new Vector2(healthSystem.GetHealth(), 1);
-        return healthBar;
-    }
-      private void ShieldAdded(){
         if (shieldSystem.GetHealth() > lastValueShield)
         {
             g_shield.transform.localScale = GetHealtBar(shieldSystem);
@@ -119,4 +106,18 @@ public class PlayerHurt : MonoBehaviour
             g_phase1.SetActive(false);
         }
     }
+    private void Die()
+    {
+        if (healthSystem.GetHealth() == 0)
+        {
+            GetComponent<Animated>().Die();
+            GameManager.instance.Die();
+        }
+    }
+    private Vector2 GetHealtBar(HealthSystem healthSystem)
+    {
+        Vector2 healthBar = new Vector2(healthSystem.GetHealth(), 1);
+        return healthBar;
+    }
+
 }
