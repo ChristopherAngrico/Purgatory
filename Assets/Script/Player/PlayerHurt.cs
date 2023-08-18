@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using Player;
 using UnityEngine;
 
 public class PlayerHurt : MonoBehaviour
@@ -14,6 +13,7 @@ public class PlayerHurt : MonoBehaviour
     [SerializeField] GameObject g_shield;
     [HideInInspector] public bool isDying;
     float lastValueShield = 0;
+    [SerializeField] GameObject g_phase1, g_phase2, g_phase3;
     private void Start()
     {
         int healthMax = 100;
@@ -29,13 +29,7 @@ public class PlayerHurt : MonoBehaviour
     private void Update()
     {
         //Update the shield every shield that has been added
-        if (shieldSystem.GetHealth() > lastValueShield)
-        {
-            //print("Update");
-            g_shield.transform.localScale = GetHealtBar(shieldSystem);
-            lastValueShield = shieldSystem.GetHealth();
-        }
-
+        ShieldAdded();
     }
     private void DamageReceivedByEnemy()
     {
@@ -71,6 +65,8 @@ public class PlayerHurt : MonoBehaviour
                     {
                         DecreaseHealth(shieldSystem, enemyDamage);
                         g_shield.transform.localScale = GetHealtBar(shieldSystem);
+                        UpdateTheUpgradeShield();
+                        lastValueShield = shieldSystem.GetHealth();
                     }
                     g_Enemy.GetComponentInChildren<HitPlayer>().damagePlayer = false;
                     //Player will received point when getting hit by enemy
@@ -82,18 +78,45 @@ public class PlayerHurt : MonoBehaviour
     private void DecreaseHealth(HealthSystem healthSystem, int enemyDamage)
     {
         healthSystem.Damage(enemyDamage);
+        print(shieldSystem.GetHealth());
     }
 
     private void Die()
     {
         if (healthSystem.GetHealth() == 0)
         {
-            isDying = true;
+            GetComponent<Animated>().Die();
+            GameManager.instance.Die();
         }
     }
     private Vector2 GetHealtBar(HealthSystem healthSystem)
     {
         Vector2 healthBar = new Vector2(healthSystem.GetHealth(), 1);
         return healthBar;
+    }
+      private void ShieldAdded(){
+        if (shieldSystem.GetHealth() > lastValueShield)
+        {
+            g_shield.transform.localScale = GetHealtBar(shieldSystem);
+            lastValueShield = shieldSystem.GetHealth();
+        }
+    }
+    private void UpdateTheUpgradeShield()
+    {
+        float shieldPhase2 = 0.68f, shieldPhase3 = 1;
+        if (shieldSystem.GetHealth() < shieldPhase3)
+        {
+            g_phase3.SetActive(false);
+            g_phase2.SetActive(true);
+        }
+        if (shieldSystem.GetHealth() < shieldPhase2)
+        {
+            g_phase2.SetActive(false);
+            g_phase1.SetActive(true);
+        }
+        if (shieldSystem.GetHealth() == 0)
+        {
+            g_phase1.SetActive(false);
+        }
     }
 }

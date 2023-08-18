@@ -62,5 +62,8 @@ namespace Player
         public void ThrowKnife(){
             throwKnife.throwKnife = true;
         }
+        public void Die(){
+            anim.SetTrigger("Die");
+        }
     }
 }
