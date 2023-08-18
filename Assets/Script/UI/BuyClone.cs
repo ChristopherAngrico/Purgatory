@@ -21,7 +21,7 @@ public class BuyClone : MonoBehaviour
     }
     public void Buy()
     {
-        if (!g_clone.activeSelf)
+        if (!g_clone.activeSelf && GameManager.instance.playerPoint >= 100)
         {
             buy = true;
             g_maxlevel.SetActive(true);

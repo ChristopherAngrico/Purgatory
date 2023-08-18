@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class ThrowKnife : MonoBehaviour
 {
@@ -17,12 +18,15 @@ public class ThrowKnife : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !onDelay)
         {
-            triggerAttack = true;
-            Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
-            Vector2 difference = mousePosition - transform.position;
-            rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-            direction = difference.normalized;
-            byFollowingMouseDirection = direction.x;
+            if (!EventSystem.current.IsPointerOverGameObject())
+            {
+                triggerAttack = true;
+                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
+                Vector2 difference = mousePosition - transform.position;
+                rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+                direction = difference.normalized;
+                byFollowingMouseDirection = direction.x;
+            }
         }
         if (throwKnife)
         {
