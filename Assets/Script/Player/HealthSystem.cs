@@ -1,16 +1,15 @@
-
 public class HealthSystem
 {
-    float currentHealth;
+    public float currentHealth;
     float maxHealth;
-    public HealthSystem(int maxHealth,bool isShield)
+    public HealthSystem(int maxHealth, bool isShield)
     {
         this.maxHealth = maxHealth;
         currentHealth = isShield ? 0 : maxHealth;
     }
     public float GetHealth()
     {
-        if(currentHealth <= 100)
+        if (currentHealth <= 100)
         {
             return currentHealth / maxHealth;
         }
@@ -39,10 +38,10 @@ public class HealthSystem
         if (currentHealth < maxHealth)
         {
             currentHealth += addHealth;
-        }
-        else
-        {
-            currentHealth = maxHealth;
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
         }
     }
 }
