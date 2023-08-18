@@ -6,7 +6,6 @@ public class PlayerInput : MonoBehaviour
     public static PlayerInput getPlayerInput;
     public InputSystem inputSystem;
     [HideInInspector] public Vector2 direction = Vector2.zero;
-    [HideInInspector] public bool attack;
     private void Awake()
     {
         getPlayerInput = this;
@@ -14,7 +13,6 @@ public class PlayerInput : MonoBehaviour
         inputSystem.Enable();
         inputSystem.Player.Movement.performed += Movement_performed;
         inputSystem.Player.Movement.canceled += Movement_canceled;
-        inputSystem.Player.Attack.performed += Attack_performed;
     }
 
     private void Movement_performed(InputAction.CallbackContext value)
@@ -24,10 +22,5 @@ public class PlayerInput : MonoBehaviour
     private void Movement_canceled(InputAction.CallbackContext value)
     {
         direction = Vector2.zero;
-    }
-
-    private void Attack_performed(InputAction.CallbackContext value)
-    {
-        attack = value.ReadValue<float>() > 0;
     }
 }

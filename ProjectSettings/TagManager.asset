@@ -9,6 +9,7 @@ TagManager:
   - Minion
   - Boss1
   - Boss2
+  - Clone
   layers:
   - Default
   - TransparentFX

@@ -28,7 +28,6 @@ public class PlayerHurt : MonoBehaviour
     }
     private void Update()
     {
-        print(shieldSystem.GetHealth());
         //Update the shield every shield that has been added
         ShieldAdded();
     }

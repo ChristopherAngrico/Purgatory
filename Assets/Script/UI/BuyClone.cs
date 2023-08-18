@@ -4,23 +4,28 @@ using UnityEngine;
 
 public class BuyClone : MonoBehaviour
 {
-    [SerializeField] private GameObject g_max;
-    [SerializeField] private GameObject clone;
-    private GameObject player;
-    private void Awake()
+    [SerializeField] private GameObject g_maxlevel;
+    [SerializeField] private GameObject g_clone;
+    private bool buy;
+    private void Update()
     {
-        player = GameObject.FindWithTag("Player");
+        if (buy)
+        {
+            if (!g_clone.activeSelf)
+            {
+                g_maxlevel.SetActive(false);
+                g_clone.SetActive(false);
+                buy = false;
+            }
+        }
     }
     public void Buy()
     {
-        Vector3 newPosition = Vector3.zero;
-        if (player.transform.rotation == Quaternion.Euler(0, 0, 0))
+        if (!g_clone.activeSelf)
         {
-            newPosition = new Vector3(player.transform.position.x + 1f, player.transform.position.y, player.transform.position.z);
-        }else{
-            newPosition = new Vector3(player.transform.position.x - 1f, player.transform.position.y, player.transform.position.z);
+            buy = true;
+            g_maxlevel.SetActive(true);
+            g_clone.SetActive(true);
         }
-        g_max.SetActive(true);
-        Instantiate(clone, newPosition, Quaternion.identity);
     }
 }

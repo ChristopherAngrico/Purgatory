@@ -1,54 +1,77 @@
-using System.Collections;
-using System.Collections.Generic;
+using Clone;
 using UnityEngine;
 
 public class CloneHealth : MonoBehaviour
 {
-     [SerializeField] private LayerMask enemyLayer;
     GameObject[] g_minions;
     GameObject[] g_bosses1;
     GameObject[] g_bosses2;
-    
+    HealthSystem healthSystem;
+    [SerializeField] GameObject g_health;
+    [HideInInspector] public bool isDying;
+    private void OnEnable()
+    {
+        int healthMax = 30;
+        healthSystem = new HealthSystem(healthMax, false);
+        g_health.transform.localScale = new Vector3(healthSystem.GetHealth(),1,1);
+    }
     void FixedUpdate()
     {
-        g_minions = GameObject.FindGameObjectsWithTag("Minion");
-        foreach (GameObject g_minion in g_minions)
-        {
-            if (g_minion != null)
-            {
-                if (g_minion.GetComponentInChildren<HitPlayer>().damagePlayer)
-                {
+        DamageReceivedByEnemy();
+        //Player Die
+        Die();
+    }
 
-                    g_minion.GetComponentInChildren<HitPlayer>().damagePlayer = false;
-                    Destroy(gameObject);                   
-                }
-            }
-        }
+    private void DamageReceivedByEnemy()
+    {
+        int damageReceivedByMinion = 14;
+        int damageReceivedByBoss1 = 40;
+        int damageReceivedByBoss2 = 40;
+
+        g_minions = GameObject.FindGameObjectsWithTag("Minion");
+        GettingHitByEnemy(g_minions, damageReceivedByMinion);
+
         g_bosses1 = GameObject.FindGameObjectsWithTag("Boss1");
-        foreach (GameObject g_boss1 in g_bosses1)
-        {
-            if (g_boss1 != null)
-            {
-                if (g_boss1.GetComponentInChildren<HitPlayer>().damagePlayer)
-                {
-                    g_boss1.GetComponentInChildren<HitPlayer>().damagePlayer = false;
-                    Destroy(gameObject);    
-                }
-            }
-        }
+        GettingHitByEnemy(g_bosses1, damageReceivedByBoss1);
+
         g_bosses2 = GameObject.FindGameObjectsWithTag("Boss2");
-        foreach (GameObject g_boss2 in g_bosses2)
+        GettingHitByEnemy(g_bosses2, damageReceivedByBoss2);
+    }
+
+    private void GettingHitByEnemy(GameObject[] g_Enemies, int damage)
+    {
+        foreach (GameObject g_Enemy in g_Enemies)
         {
-            if (g_boss2 != null)
+            if (g_Enemy != null)
             {
-                if (g_boss2.GetComponentInChildren<HitPlayer>().damagePlayer)
+                if (g_Enemy.GetComponentInChildren<HitPlayer>().damageClone)
                 {
-                    g_boss2.GetComponentInChildren<HitPlayer>().damagePlayer = false;
-                    Destroy(gameObject);    
+                    int enemyDamage = damage;
+
+                    DecreaseHealth(healthSystem, enemyDamage);
+                    g_health.transform.localScale = GetHealtBar(healthSystem);
+                    g_Enemy.GetComponentInChildren<HitPlayer>().damageClone = false;
+                    //Player will received point when getting hit by enemy
+                    GameManager.instance.playerPoint += healthSystem.GetPointFromEnemyHit(enemyDamage);
                 }
             }
         }
     }
+    private void DecreaseHealth(HealthSystem healthSystem, int enemyDamage)
+    {
+        healthSystem.Damage(enemyDamage);
+    }
 
-
+    private void Die()
+    {
+        if (healthSystem.GetHealth() == 0)
+        {
+            gameObject.SetActive(false);
+        }
+    }
+    private Vector2 GetHealtBar(HealthSystem healthSystem)
+    {
+        Vector2 healthBar = new Vector2(healthSystem.GetHealth(), 1);
+        return healthBar;
+    }
 }

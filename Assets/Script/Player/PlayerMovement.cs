@@ -1,19 +1,17 @@
 using UnityEngine;
 
-
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     InputSystem inputSystem;
     float movementSpeed = 8f;
     [HideInInspector] public bool isRunning;
-    ThrowKnife throwKnife;
+    [SerializeField]ThrowKnife throwKnife;
     float allowToMove;
     float differenceXPosition;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        throwKnife = GetComponentInChildren<ThrowKnife>();
     }
 
     public void FlippingSprite()

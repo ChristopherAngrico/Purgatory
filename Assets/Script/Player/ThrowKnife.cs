@@ -15,19 +15,14 @@ public class ThrowKnife : MonoBehaviour
     bool onDelay;
     private void Update()
     {
-        if (PlayerInput.getPlayerInput.attack && !onDelay)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !onDelay)
         {
             triggerAttack = true;
-            PlayerInput.getPlayerInput.attack = false;
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
             Vector2 difference = mousePosition - transform.position;
             rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
             direction = difference.normalized;
             byFollowingMouseDirection = direction.x;
-        }
-        else
-        {
-            PlayerInput.getPlayerInput.attack = false;
         }
         if (throwKnife)
         {
