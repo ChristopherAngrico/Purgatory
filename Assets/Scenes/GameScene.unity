@@ -827,12 +827,12 @@ GameObject:
   - component: {fileID: 382964513}
   - component: {fileID: 382964512}
   m_Layer: 0
-  m_Name: SpawnEnemy
+  m_Name: SpawnManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &382964512
 MonoBehaviour:
   m_ObjectHideFlags: 0
