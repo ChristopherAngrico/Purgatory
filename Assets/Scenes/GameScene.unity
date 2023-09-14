@@ -832,7 +832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &382964512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2152,7 +2152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   g_knife: {fileID: 2375855463325731897, guid: 9fc16ca6af9c7fa4c82462cee7123842, type: 3}
   throwSpeed: 30
-  adjustDelay: 0.1
+  adjustDelay: 0
   byFollowingMouseDirection: 0
   triggerAttack: 0
   isAttacking: 0

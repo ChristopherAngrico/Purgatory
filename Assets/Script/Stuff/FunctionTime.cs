@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FunctionTimer
@@ -50,6 +49,7 @@ public class FunctionTimer
 
     private void DestroySelf()
     {
+        Console.WriteLine("Destroy");
         isDestroyed = true;
         UnityEngine.Object.Destroy(g_object);
     }
