@@ -50,12 +50,3 @@ This game operates on a series of scripts..
 | `Point`  | Show point in UI text. |
 
 
-#### Give us feedback
-
-We have released the GDK for Unreal this early in development because we want your feedback. Please come and talk to us about the software and the documentation via: [Discord](https://discordapp.com/channels/311273633307951114/339471548647866368) - [Forums](https://forums.improbable.io/) - [GitHub issues in this repository](https://github.com/spatialos/UnrealGDK/issues).
-
-#### Public contributors
-
-We are not currently accepting public contributions. However, we are accepting [issues](https://github.com/spatialos/UnrealGDK/issues) and we do want your feedback.
-
-&copy; 2020 Improbable
