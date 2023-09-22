@@ -12,10 +12,7 @@ The following controls are bound in-game, for gameplay and testing.
 | Key Binding       | Function          |
 | ----------------- | ----------------- |
 | W,A,S,D           | Standard movement |
-| Space             | Jump              |
-| Shift             | Sprint            |
 | Left Click        | Fire              |
-| Number keys 1 - 0 | Select weapon     |
 
 #### Helper scripts
 
