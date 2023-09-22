@@ -12,7 +12,8 @@ public class ShowTimer : MonoBehaviour
     }
     private void Update()
     {
-        int time = Mathf.FloorToInt(Time.time);
+        this.time += Time.deltaTime;
+        int time = Mathf.FloorToInt(this.time);
         DisplayTime(time);
     }
     private void DisplayTime(int floatTime)
