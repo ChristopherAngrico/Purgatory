@@ -1,6 +1,6 @@
 # Purgatory Game
 
-<img src="" height="70%" width="70%">
+<img src="file:///C:/Users/USER/OneDrive%20-%20Bina%20Nusantara/Pictures/Screenshots/Screenshot%202023-09-22%20162024.png" height="70%" width="70%">
 
 - **LICENSE:** Use of the contents of this repository is subject to the [license](LICENSE.md)
 
