@@ -1,6 +1,6 @@
 # Purgatory Game
 
-<img src="https://sat02pap001files.storage.live.com/y4mPu51Vw33iHRQHpPLyyiGfTkUE1owIXAFyeXxObprx8Lc0jVuU-22YoFnURBEDi7FW0UtSYVbEccV0WvtZQHJPCMOCyY9iSvIuWH0cW4yqFgLYMXsx-bmICA-eKmjhYY0fxd9B4lNG5wRqDYz4ITC3vj8M_uSm9dNsFw4YQyl08ccKl6zwxB_T3ofNXi5hVtafzKatW0cKShrKLK76y36V_RCXyYFg6bQ5lpCzL2LpCE?encodeFailures=1&width=365&height=191" height="70%" width="70%">
+<img src="https://sat02pap001files.storage.live.com/y4mrCaZN_tgxTS8FzVOZ67-ZUZ3w6d3UivzrwUTKrPY61k81MKYxb8Qhr83xPhLWIogXjExJOPLk9_VDdACU-5W6lmpI98_mSD5kRpeAD0TMSuSyM5n-tkt4Lp5HhqeM5fr87dnyH6CEegt32JxhBHtiypvu3yIy2TnWYUBZyO_rOApNpp5EVlLm0YOyxdW_luEanwo9Isfb_VDL_C_N5jl1FgE7ywe7pG8fLmQB3TmJWE?encodeFailures=1&width=393&height=221" height="70%" width="70%">
 
 - **LICENSE:** Use of the contents of this repository is subject to the [license](LICENSE.md)
 
