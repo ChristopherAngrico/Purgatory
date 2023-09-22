@@ -12,7 +12,7 @@ The following controls are bound in-game, for gameplay and testing.
 | Key Binding       | Function          |
 | ----------------- | ----------------- |
 | W,A,S,D           | Standard movement |
-| Left Click        | Throw a knife     |
+| Left Click        | Throw  knife      |
 
 #### Helper scripts
 
