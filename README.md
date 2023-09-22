@@ -2,29 +2,10 @@
 
 <img src="https://sat02pap001files.storage.live.com/y4mrCaZN_tgxTS8FzVOZ67-ZUZ3w6d3UivzrwUTKrPY61k81MKYxb8Qhr83xPhLWIogXjExJOPLk9_VDdACU-5W6lmpI98_mSD5kRpeAD0TMSuSyM5n-tkt4Lp5HhqeM5fr87dnyH6CEegt32JxhBHtiypvu3yIy2TnWYUBZyO_rOApNpp5EVlLm0YOyxdW_luEanwo9Isfb_VDL_C_N5jl1FgE7ywe7pG8fLmQB3TmJWE?encodeFailures=1&width=393&height=221" height="70%" width="70%">
 
-- **LICENSE:** Use of the contents of this repository is subject to the [license](LICENSE.md)
+## Description
+The last survivor in a world overrun by monsters, he had faced near-death experiences time and again. Now, armed only with throwing knives, he has become a fearless monster hunter, taking down each terrifying creature one by one.
 
-The SpatialOS Game Development Kit (GDK) for Unreal is an Unreal Engine fork and plugin with associated projects. It gives you the features of [SpatialOS](https://documentation.improbable.io/spatialos-overview/docs), within the familiar workflows and APIs of Unreal Engine. For more information, see the GDK's [documentation website](https://documentation.improbable.io/gdk-for-unreal/docs).
-
-> To understand the feature-completeness, stability, performance, and support levels you can expect from the GDK, see the [product maturity lifecycle page](https://documentation.improbable.io/gdk-for-unreal/docs/product-maturity-lifecycle). For more information, visit the [development roadmap](https://github.com/spatialos/UnrealGDK/projects/1) and [Unreal features support](https://documentation.improbable.io/gdk-for-unreal/docs/unreal-features-support) pages, and contact us via our forums, or on Discord.
-
-This is the repository for the Example Project, an example shooter game that uses the GDK.
-
-In addition to the Example Project, the GDK also contains:
- 
-* [The SpatialOS Unreal Engine fork](https://github.com/improbableio/UnrealEngine)
-
-    You must be a member of the [Epic Games organization](https://github.com/EpicGames) on GitHub to access this. If you aren't, the link returns a 404 error.
-* [The GDK plugin](https://github.com/spatialos/UnrealGDK)
-
-## About the Example Project 
-The Example Project contains gameplay and assets that are representative of a basic first-person shooter running on SpatialOS. If you want to make your own project from scratch, use the Starter Template by following the [Starter Template guide](https://documentation.improbable.io/gdk-for-unreal/docs/sample-projects-starter-template-introduction) in the GDK for Unreal documentation.
-
-For setup instructions, follow the [Example Project guide](https://documentation.improbable.io/gdk-for-unreal/docs/sample-projects-example-project-introduction) in the GDK for Unreal documentation. 
-
-For more information, see the [SpatialOS GDK for Unreal documentation](https://documentation.improbable.io/gdk-for-unreal/docs).
-
-#### Game controls
+## Game controls
 
 The following controls are bound in-game, for gameplay and testing.
 
