@@ -5,6 +5,9 @@
 ## Description
 The last survivor in a world overrun by monsters, he had faced near-death experiences time and again. Now, armed only with throwing knives, he has become a fearless monster hunter, taking down each terrifying creature one by one.
 
+## Game Mechanic
+Purchasing items with points is pretty simple. To accumulate points, simply let your player take damage from enemies; your health will decrease, but those losses will be converted into points.  
+
 ## Game controls
 
 The following controls are bound in-game, for gameplay and testing.
