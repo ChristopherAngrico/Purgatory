@@ -14,13 +14,13 @@ The following controls are bound in-game, for gameplay and testing.
 | W,A,S,D           | Standard movement |
 | Left Click        | Throw  knife      |
 
-#### Helper scripts
+### Script
 
-This repository contains a set of helper scripts to get you started.
+This game operates on a series of scripts..
 
-| Helper script       | Description                                                  |
+| Script       | Description                                                  |
 | ------------------- | ------------------------------------------------------------ |
-| `LaunchSpatial.bat` | Starts a local SpatialOS deployment with the default launch configuration. |
+| `PlayerMovement` | To control player movement such as "WASD". |
 | `LaunchServer.bat`  | Starts an Unreal server-worker, and connects it to the local deployment. |
 | `LaunchClient.bat`  | Starts an Unreal client-worker, and connects it to the local deployment. |
 | `ProjectPaths.bat`  | Used by the `LaunchClient.bat`, `LaunchServer.bat` and `LaunchSpatial.bat` to specify the project environment when those scripts are run |
