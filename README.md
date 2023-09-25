@@ -49,6 +49,6 @@ This game operates on a series of scripts..
 | `VolumeControl`  | Control game volume. |
 | `Point`  | Show point in UI text. |
 
-##Short Gameplay
+## Short Gameplay
 From here:
 https://www.youtube.com/watch?v=xbCiaC3eRx0&ab_channel=ChristopherAngrico
