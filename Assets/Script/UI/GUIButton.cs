@@ -17,6 +17,7 @@ public class GUIButton : MonoBehaviour
 
     public void Quit(){
         SceneManager.LoadScene("MenuScene");
+        Time.timeScale = 1;
     }
 
     public void Canceled(){
