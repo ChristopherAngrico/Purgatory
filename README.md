@@ -1,6 +1,6 @@
 # Purgatory Game
 
-<img src="https://sat02pap001files.storage.live.com/y4mrCaZN_tgxTS8FzVOZ67-ZUZ3w6d3UivzrwUTKrPY61k81MKYxb8Qhr83xPhLWIogXjExJOPLk9_VDdACU-5W6lmpI98_mSD5kRpeAD0TMSuSyM5n-tkt4Lp5HhqeM5fr87dnyH6CEegt32JxhBHtiypvu3yIy2TnWYUBZyO_rOApNpp5EVlLm0YOyxdW_luEanwo9Isfb_VDL_C_N5jl1FgE7ywe7pG8fLmQB3TmJWE?encodeFailures=1&width=393&height=221" height="70%" width="70%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/bd150fb6-9bb0-4bcf-bc7c-26eafd74f49e" height="70%" width="70%">
 
 ## Description
 The last survivor in a world overrun by monsters, he had faced near-death experiences time and again. Now, armed only with throwing knives, he has become a fearless monster hunter, taking down each terrifying creature one by one.
@@ -49,6 +49,6 @@ This game operates on a series of scripts..
 | `VolumeControl`  | Control game volume. |
 | `Point`  | Show point in UI text. |
 
-##Short Gameplay
+## Short Gameplay
 From here:
 https://www.youtube.com/watch?v=xbCiaC3eRx0&ab_channel=ChristopherAngrico
