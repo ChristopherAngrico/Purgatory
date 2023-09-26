@@ -1,6 +1,6 @@
 # Purgatory Game
 
-<img src="https://sat02pap001files.storage.live.com/y4mrCaZN_tgxTS8FzVOZ67-ZUZ3w6d3UivzrwUTKrPY61k81MKYxb8Qhr83xPhLWIogXjExJOPLk9_VDdACU-5W6lmpI98_mSD5kRpeAD0TMSuSyM5n-tkt4Lp5HhqeM5fr87dnyH6CEegt32JxhBHtiypvu3yIy2TnWYUBZyO_rOApNpp5EVlLm0YOyxdW_luEanwo9Isfb_VDL_C_N5jl1FgE7ywe7pG8fLmQB3TmJWE?encodeFailures=1&width=393&height=221" height="70%" width="70%">
+<img src="https://sat02pap001files.storage.live.com/y4mXpaFo_Shv_0QQnWzRHG4Af00hw8q0x0xyQfrFqhmMg_msmjIfvf9luk8E1j9h3Ikhf1rNpA22hPh8Nezhr_qgWz5t9jSI9UdX-U1FWeL7h7Jy3JWKsWS2dKXmRdHpXBVfS_rmjGELtbx_1NPPpQUCZFLAAxBJJCEcpMND2OjuU5Mgh7KcyXCIkfigLcq5kJWCVi8VyBMXyYhZZGeMx9GkySoU6FnrET-6ul9cC_BABI?encodeFailures=1&width=1126&height=566" height="70%" width="70%">
 
 ## Description
 The last survivor in a world overrun by monsters, he had faced near-death experiences time and again. Now, armed only with throwing knives, he has become a fearless monster hunter, taking down each terrifying creature one by one.
