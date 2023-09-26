@@ -1,6 +1,6 @@
 # Purgatory Game
 
-<img src="https://sat02pap001files.storage.live.com/y4mXpaFo_Shv_0QQnWzRHG4Af00hw8q0x0xyQfrFqhmMg_msmjIfvf9luk8E1j9h3Ikhf1rNpA22hPh8Nezhr_qgWz5t9jSI9UdX-U1FWeL7h7Jy3JWKsWS2dKXmRdHpXBVfS_rmjGELtbx_1NPPpQUCZFLAAxBJJCEcpMND2OjuU5Mgh7KcyXCIkfigLcq5kJWCVi8VyBMXyYhZZGeMx9GkySoU6FnrET-6ul9cC_BABI?encodeFailures=1&width=1126&height=566" height="70%" width="70%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/bd150fb6-9bb0-4bcf-bc7c-26eafd74f49e" height="70%" width="70%">
 
 ## Description
 The last survivor in a world overrun by monsters, he had faced near-death experiences time and again. Now, armed only with throwing knives, he has become a fearless monster hunter, taking down each terrifying creature one by one.
