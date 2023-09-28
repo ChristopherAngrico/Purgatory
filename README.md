@@ -26,6 +26,10 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 
 <p>Upgrade UI<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/UI%20Upgrade.png" height="30%" width="30%">
+
+<p>Boss2<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Boss2.GIF" height="30%" width="30%">
+  
 ## Game controls
 
 The following controls are bound in-game, for gameplay and testing.
