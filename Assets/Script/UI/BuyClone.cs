@@ -26,6 +26,7 @@ public class BuyClone : MonoBehaviour
             buy = true;
             g_maxlevel.SetActive(true);
             g_clone.SetActive(true);
+            GameManager.instance.playerPoint -= 100;
         }
     }
 }
