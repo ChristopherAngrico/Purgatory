@@ -10,8 +10,22 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 <img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Attack.GIF?raw=true" height="30%" width="30%">
   
 <p>Movement<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Attack.GIF?raw=true" height="30%" width="30%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Movement.GIF?raw=true" height="30%" width="30%">
 
+<p>Clone<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Clone.png?raw=true" height="30%" width="30%">
+
+<p>Flip<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Flip.GIF?raw=true" height="30%" width="30%">
+
+<p>Boss1<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Boss1.GIF?raw=true" height="30%" width="30%">  
+
+<p>Point<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Point.png" height="30%" width="30%">
+
+<p>Upgrade UI<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/UI%20Upgrade.png" height="30%" width="30%">
 ## Game controls
 
 The following controls are bound in-game, for gameplay and testing.
