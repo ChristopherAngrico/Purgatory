@@ -1,2 +1,0 @@
-Started render process: C:/Program Files/kdenlive/bin/melt.exe -progress C:/Users/USER/AppData/Local/Temp/kdenlive-ZjRPoj-1.mlt
-mlt_repository_init: failed to dlopen C:\Program Files\kdenlive\lib\mlt/libmltsox.dll ("C:\Program Files\kdenlive\lib\mlt\libmltsox.dll": The specified module could not be found.)Rendering of C:/Users/USER/Unity Project/Purgatory/Purgatory/Flip.GIF aborted, resulting video will probably be corrupted.
