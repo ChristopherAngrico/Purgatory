@@ -7,7 +7,7 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 
 ## Game Mechanic
 <p>Attack<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Attack.GIF?raw=true" height="50%" width="50%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Attack.GIF?raw=true" height="30%" width="30%">
 
 ## Game controls
 
