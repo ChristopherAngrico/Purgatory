@@ -6,7 +6,7 @@
 The last survivor in a world overrun by monsters, he had faced near-death experiences time and again. Now, armed only with throwing knives, he has become a fearless monster hunter, taking down each terrifying creature one by one.
 
 ## Game Mechanic
-<img src="![Attack](https://github.com/ChristopherAngrico/Purgatory/assets/87889745/300a3b01-a522-43d8-8280-42764959a5cb)" height="70%" width="70%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/300a3b01-a522-43d8-8280-42764959a5cb" height="70%" width="70%">
 
 ## Game controls
 
