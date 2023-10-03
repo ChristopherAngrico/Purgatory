@@ -11,11 +11,6 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
   
 <p>Movement<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/7ff3abb8-6dbb-4f13-95bc-42b76e9b2073" height="30%" width="30%">
-  
-![Boss2Die](https://github.com/ChristopherAngrico/Purgatory/assets/87889745/ed864e71-65b6-41ca-9d96-c6f778c7a968)
-![Boss1Walk](ht!
-[Boss2Walk]())
-
 
 <p>Clone<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Clone.png?raw=true" height="30%" width="30%">
