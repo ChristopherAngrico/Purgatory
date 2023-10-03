@@ -88,7 +88,7 @@ private void MoveTowardPlayer()
 
 <p>Boss1 die<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/feb9907e-a63e-4fd9-bd3c-7950b8e6c5ad" height="30%" width="30%">
-    
+
 ```C#
 private void FixedUpdate()
     {
