@@ -5,7 +5,7 @@ using UnityEngine;
 public class ShowTimer : MonoBehaviour
 {
     private TextMeshProUGUI textTImer;
-    float time = 120;
+    float time = 0;
     private void Awake()
     {
         textTImer = GetComponent<TextMeshProUGUI>();

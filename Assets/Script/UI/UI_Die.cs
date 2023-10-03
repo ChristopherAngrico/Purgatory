@@ -7,7 +7,6 @@ public class UI_Die : MonoBehaviour
     [SerializeField] GameObject g_UI_image;
     [SerializeField] GameObject g_restart_button;
     float time;
-
     private void Update()
     {
         time += Time.unscaledDeltaTime;
@@ -16,8 +15,6 @@ public class UI_Die : MonoBehaviour
             g_UI_image.SetActive(true);
             g_restart_button.SetActive(true);
         }
-
-
     }
     public void ChangeScene()
     {

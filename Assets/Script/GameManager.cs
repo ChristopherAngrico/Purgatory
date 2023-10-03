@@ -34,12 +34,12 @@ public class GameManager : MonoBehaviour
         FunctionTimer.Create(SpamMinion, 60);
         FunctionTimer.Create(SpawnMinionInNormalTime, 62);//Set the spawn enemy in the normal time
         //In two minute Deploy 2 enemy boss
-        FunctionTimer.Create(StopSpawning, 120);
-        FunctionTimer.Create(SpawnFirstBoss, 123);
-        FunctionTimer.Create(StopSpawning, 124);
+        FunctionTimer.Create(SpawnFirstBoss, 70);
+        FunctionTimer.Create(SpamMinion, 72);
+
         //In third until fith Deploy the last boss and then the game is end
-        FunctionTimer.Create(SpawnSecondBoss, 210);
-        FunctionTimer.Create(StopSpawning, 211);
+        FunctionTimer.Create(SpawnSecondBoss, 120);
+        FunctionTimer.Create(StopSpawning, 121);
     }
 
     public void Die()

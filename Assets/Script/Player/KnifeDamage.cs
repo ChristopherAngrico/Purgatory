@@ -7,17 +7,17 @@ public class KnifeDamage : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Minion"))
         {
-            knifeDamage = 100 + GameManager.instance.upgradeKnifeDamage;
+            knifeDamage = 10 + GameManager.instance.upgradeKnifeDamage;
             other.GetComponent<EnemyCondition>().Damage(knifeDamage);
             Destroy(gameObject);// Destroy the knife after hit enemy
         }
         if(other.gameObject.CompareTag("Boss1")){
-            knifeDamage = 100 + GameManager.instance.upgradeKnifeDamage;
+            knifeDamage = 5 + GameManager.instance.upgradeKnifeDamage;
             other.GetComponent<EnemyCondition>().Damage(knifeDamage);
             Destroy(gameObject);// Destroy the knife after hit enemy
         }
         if(other.gameObject.CompareTag("Boss2")){
-            knifeDamage = 100 + GameManager.instance.upgradeKnifeDamage;
+            knifeDamage = 5 + GameManager.instance.upgradeKnifeDamage;
             other.GetComponent<EnemyCondition>().Damage(knifeDamage);
             Destroy(gameObject);// Destroy the knife after hit enemy
         }

@@ -6,7 +6,7 @@ public class BackgroundLoop : MonoBehaviour
 {
     private Material _material;
     private Vector2 playerDirection,followPlayer;
-    private float playerSpeed = 1f;
+    private float playerSpeed = 0.3f;
     private void Start()
     {
         _material = GetComponent<Renderer>().material;
