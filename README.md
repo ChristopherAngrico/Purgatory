@@ -21,6 +21,7 @@ private void ThrowKnifeDirection()
 
 <p>Movement<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/7ff3abb8-6dbb-4f13-95bc-42b76e9b2073" height="30%" width="30%">
+    
 ```c#
 rb.velocity = PlayerInput.getPlayerInput.direction * movementSpeed;
 ```
