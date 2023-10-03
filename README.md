@@ -32,6 +32,22 @@ rb.velocity = PlayerInput.getPlayerInput.direction * movementSpeed;
 <p>Flip<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/1f706385-2949-48d1-823b-81fef4812ce3" height="30%" width="30%">
 
+```C#
+private void FlippingSprite()
+    {
+        //Flipping sprite by following mouse direction
+        if (differenceXPosition < 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, 180, 0);
+        }
+    }
+```
+
+
 <p>Boss1 Attack<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/86130c7f-67c9-4ae1-b9ad-826727822875" height="30%" width="30%">
 
