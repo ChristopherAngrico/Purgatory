@@ -9,7 +9,7 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 <p>Attack<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/8c9b3237-6ae1-4a2b-ae16-81913c0171a3" height="30%" width="30%">
 
-```
+```C#
 private void ThrowKnifeDirection()
     {
         GameObject knifeClone = Instantiate(g_knife) as GameObject;
