@@ -115,7 +115,7 @@ private void FixedUpdate()
             Destroy(gameObject);
         }
     }
-    ```
+```
 
 <p>Point<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/86071b8f-42d8-4625-88bb-73ae58c17b82" height="30%" width="30%">
