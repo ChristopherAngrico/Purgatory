@@ -7,28 +7,39 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 
 ## Game Mechanic
 <p>Attack<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Attack.GIF?raw=true" height="30%" width="30%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/8c9b3237-6ae1-4a2b-ae16-81913c0171a3" height="30%" width="30%">
   
 <p>Movement<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Movement.GIF?raw=true" height="30%" width="30%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/7ff3abb8-6dbb-4f13-95bc-42b76e9b2073" height="30%" width="30%">
+  
+![Boss2Die](https://github.com/ChristopherAngrico/Purgatory/assets/87889745/ed864e71-65b6-41ca-9d96-c6f778c7a968)
+![Boss1Walk](ht!
+[Boss2Walk]())
+
 
 <p>Clone<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Clone.png?raw=true" height="30%" width="30%">
 
 <p>Flip<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Flip.GIF?raw=true" height="30%" width="30%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/1f706385-2949-48d1-823b-81fef4812ce3" height="30%" width="30%">
 
-<p>Boss1<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Boss1.GIF?raw=true" height="30%" width="30%">  
+<p>Boss1 Walk<p/><br/>
+<img src="" height="30%" width="30%">
+
+<p>Boss1 die<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/feb9907e-a63e-4fd9-bd3c-7950b8e6c5ad" height="30%" width="30%">  
 
 <p>Point<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Point.png" height="30%" width="30%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/86071b8f-42d8-4625-88bb-73ae58c17b82" height="30%" width="30%">
 
 <p>Upgrade UI<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/UI%20Upgrade.png" height="30%" width="30%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/e365da18-d551-4479-9c82-08d5834c2566" height="30%" width="30%">
 
-<p>Boss2<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Boss2.GIF" height="30%" width="30%">
+<p>Boss2 walk<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/38b54c18-e735-4d8e-91b5-4d98b6f5f35f" height="30%" width="30%">
+
+<p>Boss2 die<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/ed864e71-65b6-41ca-9d96-c6f778c7a968" height="30%" width="30%">
   
 ## Game controls
 
