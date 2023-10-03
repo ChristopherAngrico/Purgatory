@@ -18,6 +18,10 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 <p>Flip<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/1f706385-2949-48d1-823b-81fef4812ce3" height="30%" width="30%">
 
+<p>Boss1 Attack<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/e3e7fea1-c326-4e06-a668-3ea14fbafa48" height="30%" width="30%">
+
+
 <p>Boss1 Walk<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/475a1834-14e0-4b3a-a736-9e804c5007c4" height="30%" width="30%">
 
