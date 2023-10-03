@@ -21,5 +21,6 @@ public class UI_Die : MonoBehaviour
         gameObject.SetActive(false);
         SceneManager.LoadScene("GameScene");
         Time.timeScale = 1;
+        GameManager.instance.playerPoint = 0;
     }
 }
