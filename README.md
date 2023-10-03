@@ -19,7 +19,7 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/1f706385-2949-48d1-823b-81fef4812ce3" height="30%" width="30%">
 
 <p>Boss1 Attack<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/175de9bb-79a1-4ef5-99b4-38499bb287c0" height="30%" width="30%">
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/86130c7f-67c9-4ae1-b9ad-826727822875" height="30%" width="30%">
 
 <p>Boss1 Walk<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/475a1834-14e0-4b3a-a736-9e804c5007c4" height="30%" width="30%">
@@ -38,10 +38,6 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 
 <p>Boss2 die<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/ed864e71-65b6-41ca-9d96-c6f778c7a968" height="30%" width="30%">
-  
-
-https://github.com/ChristopherAngrico/Purgatory/assets/87889745/4c47f5c5-da14-4bf9-92d5-d81e0b6c2f8f
-
 
 ## Game controls
 
