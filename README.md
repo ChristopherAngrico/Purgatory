@@ -87,7 +87,35 @@ private void MoveTowardPlayer()
 ```
 
 <p>Boss1 die<p/><br/>
-<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/feb9907e-a63e-4fd9-bd3c-7950b8e6c5ad" height="30%" width="30%">  
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/feb9907e-a63e-4fd9-bd3c-7950b8e6c5ad" height="30%" width="30%">
+    
+```C#
+private void FixedUpdate()
+    {
+        if (healthSystem.GetHealth() == 0)
+        {
+            detectPlayer.enabled = false;
+            StartCoroutine(Animated());
+        }
+    }
+
+    private IEnumerator Animated()
+    {
+        isDying = true;
+        GetComponent<CapsuleCollider2D>().enabled = false;
+        yield return new WaitForSeconds(2);
+        if (gameObject.tag == "Boss2")
+        {
+            yield return new WaitForSeconds(1);
+            GameManager.instance.Finished();
+            Destroy(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    ```
 
 <p>Point<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/86071b8f-42d8-4625-88bb-73ae58c17b82" height="30%" width="30%">
