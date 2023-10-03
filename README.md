@@ -29,6 +29,31 @@ rb.velocity = PlayerInput.getPlayerInput.direction * movementSpeed;
 <p>Clone<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/blob/main/Purgatory/Clone.png?raw=true" height="30%" width="30%">
 
+```
+ private void Update()
+    {
+        if (buy)
+        {
+            if (!g_clone.activeSelf)
+            {
+                g_maxlevel.SetActive(false);
+                g_clone.SetActive(false);
+                buy = false;
+            }
+        }
+    }
+    public void Buy()
+    {
+        if (!g_clone.activeSelf && GameManager.instance.playerPoint >= 100)
+        {
+            buy = true;
+            g_maxlevel.SetActive(true);
+            g_clone.SetActive(true);
+            GameManager.instance.playerPoint -= 100;
+        }
+    }
+```
+
 <p>Flip<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/1f706385-2949-48d1-823b-81fef4812ce3" height="30%" width="30%">
 
