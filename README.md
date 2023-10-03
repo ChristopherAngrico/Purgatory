@@ -69,6 +69,23 @@ private void FlippingSprite()
 <p>Boss1 Walk<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/475a1834-14e0-4b3a-a736-9e804c5007c4" height="30%" width="30%">
 
+```C#
+private void MoveTowardPlayer()
+    {
+        float speed = 5f;
+        if (playerDetect != null && !triggerAttack && !idleState)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, playerDetect.transform.position, speed * Time.deltaTime);
+            isRunning = true;
+        }
+        else
+        {
+            transform.position += Vector3.zero;
+            isRunning = false;
+        }
+    }
+```
+
 <p>Boss1 die<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/feb9907e-a63e-4fd9-bd3c-7950b8e6c5ad" height="30%" width="30%">  
 
