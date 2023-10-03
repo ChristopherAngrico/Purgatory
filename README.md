@@ -51,6 +51,45 @@ private void FlippingSprite()
 <p>Boss1 Attack<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/86130c7f-67c9-4ae1-b9ad-826727822875" height="30%" width="30%">
 
+```C#
+private void OnEnable()
+    {
+        if (transform.parent.CompareTag("Boss1"))
+        {
+            box = GetComponentInChildren<BoxCollider2D>();
+            box.enabled = true;
+        }
+        if (transform.parent.CompareTag("Boss2") || transform.parent.CompareTag("Minion"))
+        {
+            polygon = GetComponentInChildren<PolygonCollider2D>();
+            polygon.enabled = true;
+        }
+    }
+    private void OnDisable()
+    {
+        if (transform.parent.CompareTag("Boss1"))
+        {
+            box.enabled = false;
+        }
+        if (transform.parent.CompareTag("Boss2") || transform.parent.CompareTag("Minion"))
+        {
+            polygon.enabled = false;
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Clone"))
+        {
+
+            damagePlayer = true;
+            if (GameObject.FindWithTag("Clone") != null)
+            {
+                damageClone = true;
+            }
+        }
+    }
+```
+
 <p>Boss1 Walk<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/475a1834-14e0-4b3a-a736-9e804c5007c4" height="30%" width="30%">
 
