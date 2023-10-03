@@ -230,6 +230,7 @@ private void FixedUpdate()
             Destroy(gameObject);
         }
     }
+```
 
 ## Game controls
 
