@@ -33,6 +33,9 @@ The last survivor in a world overrun by monsters, he had faced near-death experi
 <p>Upgrade UI<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/e365da18-d551-4479-9c82-08d5834c2566" height="30%" width="30%">
 
+<p>Boss2 Attack<p/><br/>
+<img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/b8d06361-696d-49d4-b44d-1479694e5e6a" height="30%" width="30%">
+
 <p>Boss2 walk<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/38b54c18-e735-4d8e-91b5-4d98b6f5f35f" height="30%" width="30%">
 
