@@ -120,6 +120,34 @@ private void FixedUpdate()
 <p>Point<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/86071b8f-42d8-4625-88bb-73ae58c17b82" height="30%" width="30%">
 
+```c#
+foreach (GameObject g_Enemy in g_Enemies)
+        {
+            if (g_Enemy != null)
+            {
+                if (g_Enemy.GetComponentInChildren<HitPlayer>().damagePlayer)
+                {
+                    int enemyDamage = damage;
+                    if (shieldSystem.GetHealth() <= 0)
+                    {
+                        DecreaseHealth(healthSystem, enemyDamage);
+                        g_health.transform.localScale = GetHealtBar(healthSystem);
+                    }
+                    else
+                    {
+                        DecreaseHealth(shieldSystem, enemyDamage);
+                        g_shield.transform.localScale = GetHealtBar(shieldSystem);
+                        UpdateTheUpgradeShield();
+                        lastValueShield = shieldSystem.GetHealth();
+                    }
+                    g_Enemy.GetComponentInChildren<HitPlayer>().damagePlayer = false;
+                    //Player will received point when getting hit by enemy
+                    GameManager.instance.playerPoint += healthSystem.GetPointFromEnemyHit(enemyDamage);
+                }
+            }
+        }
+```
+
 <p>Upgrade UI<p/><br/>
 <img src="https://github.com/ChristopherAngrico/Purgatory/assets/87889745/e365da18-d551-4479-9c82-08d5834c2566" height="30%" width="30%">
 
