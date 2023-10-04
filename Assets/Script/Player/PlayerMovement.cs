@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void FlippingSprite()
+    private void FlippingSprite()
     {
         //Flipping sprite by following mouse direction
         if (differenceXPosition < 0)
